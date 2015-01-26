@@ -8,12 +8,12 @@ describe Elevator do
   end
 
   it 'should set the provided floor when instantiated' do
-    expect(Elevator.new(5).floor).to eq 5
+    expect(Elevator.new(floor: 5).floor).to eq 5
   end
 
   # Change xit to it when you're ready to make this spec pass
   xit 'should go to the floor' do
-    elevator.go_to 3
+    elevator.go_to floor: 3
     expect(elevator.floor).to eq 3
   end
 end
